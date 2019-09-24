@@ -4,6 +4,8 @@ import requests
 def main():
     # 入力
     zipcode = input('郵便番号を入力してください:')
+    if len(zipcode) != 7:
+
 
     url = f'http://zipcloud.ibsnet.co.jp/api/search?zipcode={zipcode}'
 
